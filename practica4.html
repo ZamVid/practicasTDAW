@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Detalles de la foto</legend>
+            Titulo<br /><input type="text"><br />
+            Descripcion<br /><textarea name="Descripcion" id="des" cols="30" rows="10"></textarea><br />
+
+            <div id="izquierda" style="float:left;">
+                Continente<br />
+                <select name="Continente" id="cont">
+                    <option value="default">Escoger continente</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="europa">Europa</option>
+                    <option value="namerica">Norte America</option>
+                    <option value="samerica">Sur America</option>
+                </select><br />
+                Pais<br />
+                <select name="pais" id="pais">
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="eeuu">Estados Unidos</option>
+                </select><br />
+                Ciudad<br />
+                <input list="ciudades" id="ciudad" name="ciudad" /><br />
+
+                <datalist id="ciudades">
+                    <option value="calgary">Calgary</option>
+                    <option value="monttreal">Montreal</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="vancouver">Vancouver</option>
+                    <option value="tlaxcala">Tlaxcala</option>
+                </datalist>
+                Acepto la licencia de software <input type="checkbox" name="aceptarLicencia" id="al" /><br />
+                Califica esta foto: <br><input type="number" /><br />
+                Coleccion de color: <br><input type="color" name="color" id="color" /><br />
+            </div>
+            <div id="derecha" style="float:right;">
+                Copyright?<br />
+                <input type="radio" name="copyright" id="tdr">Todos los derechos reservados<br />
+                <input type="radio" name="copyright" id="cc">Creative Commons<br>
+                Licencias Creative Commons<br>
+                <input type="checkbox" name="lcc" id="atri">Atribucion<br>
+                <input type="checkbox" name="lcc" id="no-comer">No comercial<br>
+                <input type="checkbox" name="lcc" id="nhtd">No hay trabajos derivativos<br>
+                <input type="checkbox" name="lcc" id="cxi">Compartirt por igual<br>
+                Fecha de toma:<br><input type="date" name="" id=""><br>
+                Hora de toma:<br><input type="time" name="" id=""><br>
+            </div>
+            <div id="botones" style="clear: both;">
+                <button>Enviar</button><button>limpiar</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
