@@ -1,0 +1,227 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+/*agregar un media query para el body
+y definir el tamaño de letra para el cuerpo
+font-size: 16px;*/
+@media (max-width: 500px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+header {
+  background-image: url("../img/header.jpg");
+  background-size:cover;
+  background-position: center;
+  height: 600px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+header nav {
+  padding: 20px;
+  color: white;
+  /*agregar un tamaño de fuente relativo*/
+  font-size: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0
+}
+
+
+/*cambiar el tamaño del encabezado para dispositivos moviles*/
+@media (max-width: 500px) {
+  header {
+    height: 300px;
+    line-height: 1.2;
+  }
+}
+
+#logo{
+  /*font-size: 40px;*/
+  font-size: 40px;
+}
+
+#links{
+  font-size: 18px;
+}
+
+#links a {
+  margin: 15px;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.button {
+  background-color: #a8a6a1;
+  padding: 10px 15px;
+  border: 2px solid #a8a6a1;
+  border-radius: 10px;
+}
+
+a.button:hover {
+  background-color: rgba(255,255,255,0.5);
+  color: white;
+}
+
+header h1 {
+  /* cambiar el tamaño de la fuente que sea relativo*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  font-size: relative;
+  line-height: 1.5;
+}
+
+header h1 em {
+  /*font-size: 20px;*/
+
+  font-size: 20px;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+header h1 strong {
+  font-style: normal;
+  /*font-size: 68px;*/
+  font-size: 68px;
+  letter-spacing: 1px;
+
+}
+
+/*agregar un media querie*/
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+}
+
+header h1 a {
+  /*font-size: 18px;
+  cambiar el tamaño de la fuente*/
+  font-size: 18px;
+}
+
+section {
+  margin: 75px 100px;
+  text-align: center;
+}
+/*agregar un media query*/
+@media (max-width: 500px) {
+  section {
+    margin: 40px 10px;
+  }
+}
+
+#main p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 125px;
+  width: 70%;
+}
+
+#main h1 {
+  /*font-size: 38px;*/
+  font-size: 38px;
+}
+
+
+p {
+  /*line-height: 36px;*/
+   line-height: 36px;
+}
+
+footer {
+  background-color: rgb(45,45, 45);
+  color: rgba(255, 255, 255, .8);
+  padding: 35px;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, .4);
+}
+
+address {
+  font-style: normal;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+.details div {
+    width: calc(50% - 10px);
+    margin: 50px 0;
+}
+
+/*agregar un media query para organizar las imagenes
+como columnas y modificar la forma en que se calcula
+#details div*/
+@media (max-width: 500px) {
+  .details {
+    flex-direction: column;
+  }
+  #details div{
+    flex-direction: column;
+  }
+}
+
+.details img {
+  width: 100%;
+}
+
+.details h1 {
+  font-size: 38px;
+}
+
+.details div a.button {
+  color: white;
+}
+
+.details div a.button:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+}
+
+/*crear un menu para moviles*/
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+  #links {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+}
