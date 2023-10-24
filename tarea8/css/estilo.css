@@ -1,0 +1,127 @@
+header {
+    background-color: rgb(47, 127, 219);
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding-left: 1em; /* Cambié a em */
+}
+
+.logo {
+    padding-top: 1%; /* Cambié a em */
+    padding-left: 6%; /* Cambié a porcentaje */
+    display: inline;
+    font-weight: bold;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 200%;
+}
+
+#box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle {
+    flex: 2;
+    order: 2;
+    display: flexbox; /* Esto parece un error, debería ser "flex" */
+    padding: 1em; /* Cambié a em */
+}
+
+#railLeft {
+    flex: 1;
+    order: 1;
+    display: flexbox; /* Esto parece un error, debería ser "flex" */
+}
+
+#railRight {
+    flex: 1;
+    order: 3;
+    display: flexbox; /* Esto parece un error, debería ser "flex" */
+}
+
+.alertLeft {
+    background-color: #c1c1c3; /* Color de fondo claro */
+    padding: 1em; /* Cambié a em */
+    margin-bottom: 1em; /* Cambié a em */
+    color: #7a7a7a;
+}
+
+.alertLeft strong {
+    /* Aquí puedes agregar estilos para el nombre del usuario */
+    color: #757575;
+}
+
+.great {
+    background-color: #ededed;
+    padding-top: 1em; /* Cambié a em */
+    padding-bottom: 1em; /* Cambié a em */
+    padding-left: 2%; /* Cambié a porcentaje */
+    padding-right: 2%; /* Cambié a porcentaje */
+    margin-bottom: 1em; /* Cambié a em */
+    
+}
+.great li{
+    list-style-type: none;
+}
+
+.great h3 {
+    background-color: rgb(127, 185, 255);
+    padding: 1em; /* Cambié a em */
+}
+
+.great #recentMessageList,.great #chList,.great #sellList {
+    background-color: rgb(242, 251, 255);
+}
+
+#company,#clientInfo {
+    width: 250px;
+    padding: 1em; /* Cambié a em */
+    float: left;
+    box-sizing: border-box;
+}
+
+#clientInfo {
+    float: right;
+}
+
+hr {
+    margin-top: 200px;
+}
+
+.blockIcon {
+    float: left;
+    padding-right: 1.5em;
+}
+
+#chList li {
+    padding-bottom: 1.5em; /* Cambié a em */
+}
+
+.chNumber {
+    float: left;
+    font-size: 2em;
+    padding-right: 1.5em; /* Cambié a porcentaje */
+}
+
+#sellList li {
+    padding-bottom: 4.5em; /* Cambié a em */
+}
+
+.boxBook {
+    float: left;
+}
+
+.SendButton {
+    display: block;
+    background-color: rgb(47, 127, 219);
+    color: white;
+    width: 130px;
+    padding: 1em; /* Cambié a em */
+}
